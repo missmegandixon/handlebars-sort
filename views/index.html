@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>​
+ <head>​
+   <meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="../styles.css">
+ </head>​
+    <body>
+      <h1>Artist Information</h1>
+      <div id="artist-table-container"></div>
+        <script id="some-template" type="text/x-handlebars-template">
+            <table>
+                <thead id ="thead">
+                  <th id="artist">Artist {{arrow 'artist'}}</th>
+                  <th id="age">Age {{arrow 'age'}}</th>
+                  <th id="networth">Networth {{arrow 'networth'}}</th>
+                </thead>
+                    <tbody>
+                        {{#users}}
+                          <tr>
+                            <td>{{fullName person}}</td>
+                            <td>{{age}}</td>
+                            <td>{{networth}}</td>
+                          </tr>
+                        {{/users}}
+                    </tbody>
+              </table>
+      </script>
+      <!-- <script type="text/javascript" src="../public/jquery-1.9.1.min.js"></script> -->
+      <script src="../public/handlebars-v3.0.3.js"></script>
+      <script type="text/javascript" src="../public/main.js"></script>
+  </body>​
+​</html>

@@ -1,0 +1,21 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "!['cookie.gif'](./cookie.gif?raw=true)",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.isg.apple.com/erica-dixon/hello.git"
+  },
+  "author": "Meg Dixon",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^3.0.2",
+    "hapi": "^8.4.0",
+    "hapi-swagger": "^0.7.3"
+  }
+}
